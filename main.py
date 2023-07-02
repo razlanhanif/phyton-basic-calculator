@@ -2,7 +2,14 @@ print("Basic Addition Calculator")
 
 n1 = input("Enter your number:")
 n2 = input("Enter another number:")
-operation = float(n1) + float(n2)
+o1 = input("Choose a operation! (add, minus, mul): ")
+addition = float(n1) + float(n2)
+subs = float(n1) - float(n2)
+multi = float(n1) * float(n2)
 
-
-print(operation)
+if o1 == "add":
+    print(addition)
+if o1 == "minus":
+    print(subs)
+if o1 == "mul":
+    print(multi)
